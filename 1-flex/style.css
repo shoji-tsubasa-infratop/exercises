@@ -1,0 +1,70 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  background-color: #ff1493;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 30px 20px;
+}
+
+header > div {
+  flex-basis: 140px;
+  height: 70px;
+  background-color: #ffc0cb;
+  margin: 0 10px;
+}
+
+header > div:first-child {
+  margin-right: auto;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+.left {
+  width: 300px;
+  background-color: #90ee90;
+}
+
+.right {
+  flex-grow: 1;
+  max-width: 700px;
+  padding: 20px;
+  background-color: #008000;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.right > div {
+  flex-basis: 200px;
+  height: 130px;
+  background-color: yellow;
+  margin: 10px;
+}
+
+footer {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #4169e1;
+  justify-content: center;
+}
+
+footer > div {
+  background-color: #b0c4de;
+  flex-basis:45%;
+  max-width: 600px;
+  height: 40px;
+  margin: 10px;
+}
